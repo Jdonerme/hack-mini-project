@@ -177,7 +177,7 @@ label SOLeaves:
     
     show sylvie blue surprised
     menu:
-        "Oh no, he left me! I love him so much and can't stand to be without him."
+        y "Oh no, he left me! I love him so much and can't stand to be without him."
         "Do drugs to numb the pain.":
             jump OD
 
@@ -197,7 +197,7 @@ label OD: # Ethan
     scene bg house
 
     show sylvie blue normal
-    y "The love of my life has left me."
+    "You use some painkillers."
     y "..."
     y "......"
 
@@ -205,15 +205,11 @@ label OD: # Ethan
     y "..."
     y "One more couldn't hurt."
     y "Oops..."
-    hide sylvie blue normal
-
-    show sylvie blue overdose
-
     scene bg all red
-    
     show sylvie blue overdose
+    "You overdosed."
     
-    "Here's what could have happened if you got help."
+    "Here's how you could have gotten help."
     jump getHelp
 
 label getHelp:
