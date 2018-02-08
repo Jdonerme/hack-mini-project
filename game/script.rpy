@@ -12,6 +12,7 @@ define judge = Character("Judge") # morty
 define police = Character("Police Officer") # police
 define bae = Character("Boyfriend") # bae normal
 define doc = Character("Doctor") # doctor
+define dealer = Character("Drug Dealer")
 
 # PICTURE NAMEs of the backgrounds
 # bg courtroom
@@ -20,6 +21,7 @@ define doc = Character("Doctor") # doctor
 # bg uni
 # bg all black
 # bg all red
+# bg jail
 
 # The game starts here.
 
@@ -74,6 +76,7 @@ label high:
 label depressed:
     scene bg house
     show sylvie blue normal
+    "Two weeks have passed since you used the painkillers."
     "You have been feeling depressed lately."
     menu:
         "Would you like to steal more drugs?"
@@ -117,31 +120,47 @@ label lockUpDrugs:
             jump DoctorsOffice
 
 label DrugDeal:
+    scene bg uni
+    show shady
+    dealer "Yo I have the drugs, give me your money."
+    "You pay the drug dealer off and get the drugs."
+    hide shady
+    "But before you can make your get away, a police officer finds you!"
+    jump policeScene
 
 label policeScene:
-    scene bg house
+    scene bg uni
     show police
-    return
-
-label courtScene:
+    police "You’ve been caught in the middle of a drug deal young lady. We’re taking you to jail."
+    jump jail
 
 label jail:
+    scene bg jail
+    show sylvie blue normal
+    y "I can’t believe I got caught buying drugs. What are my parents going to think? How did I get like this?"
+    jump courtScene
+
+label courtScene:
+    scene morty
+    judge "You’ve been charged with possession of prescription drugs that were not prescribed to you. We are going to sentence you to one year of rehab so you can get the help you need."
+    jump getHelp 
+
 
 label  DoctorsOffice:
     scene bg doctor
     show sylvie blue normal
-    syvie blue normal "Hey doc, I have severe back pain. Could you prescribe me some drugs to help with this?"
+    y "Hey doc, I have severe back pain. Could you prescribe me some drugs to help with this?"
     hide sylvie blue normal
     show doctor
-    doctor "Sure, honey. Let me just write up a prescription. But be careful, it’s easy to get addicted to this medication."
+    doc "Sure, honey. Let me just write up a prescription. But be careful, it’s easy to get addicted to this medication."
 
 label SOConfronts:
     scene bg house
-    show bae
+    show bae normal
     bae "My love, we need to talk. You've been using painkillers and it's getting out of hand. You need to get help."
     
     hide bae
-    show y
+    show sylvie blue normal
     menu:
         bae "Will you let me get you help for your prescription drug problem"
         "Yes my love. Thank you for being so supportive.":
@@ -152,11 +171,11 @@ label SOConfronts:
     
 label SOLeaves:
     scene bg house
-    show bae
+    show bae normal
     bae "I can't do this anymore. I've been so supportive of you, but if you don't want to get help then I'm leaving."
     hide bae
     
-    show y
+    show sylvie blue normal
     menu:
         "Oh no, he left me! I love him so much and can't stand to be without him."
         "Do drugs to numb the pain.":
@@ -164,46 +183,59 @@ label SOLeaves:
 
         "He was so right about everything. I need to get help.":
             jump getHelp
-    
 
-     # sylvie blue overdose
+label OD: # Ethan
+    # sylvie blue overdose
     # bg house
     # bg all black
     # bg all red
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-    
-    
+    # define y = Character("You") # sylvie blue normal
+    # define mom = Character("Mom") # mom
+
+
+    scene bg house
+
+    show sylvie blue normal
+    y "The love of my life has left me."
+    y "..."
+    y "......"
+    y "........."
+
+    menu:
+        "Should I ...?"
+        "Get help":
+            jump getHelp
+        "Just one to numb the pain":
+            jump ODhaha
+
+label ODhaha:
+    scene bg house
+
+    show sylvie blue normal
+    y "Maybe another pill..."
+    y "..."
+    y "..."
+    y "One more couldn't hurt"
+    y "Oops.."
+    hide sylvie blue normal
+
+    show sylvie blue overdose
+    y "hehe."
+    y "hehehe."
+    hide sylvie blue overdose
+
+    scene bg all black
+    y "hehehehehe."
+
+    scene bg all red
+    show sylvie blue overdose
+    y "HEHEHEHEHEHE"
+    hide sylvie blue overdose
+    "Here's what could have happened if you got help."
+    jump getHelp
+
 label getHelp:
-
     return
 
 
