@@ -87,7 +87,7 @@ label highAgain:
     scene bg house
     show sylvie blue giggle
     y "These painkillers make life so much easier."
-    "You decide to steal pills regularly"
+    "You decide to steal pills regularly."
     jump parentsConfront
     
     
@@ -97,11 +97,11 @@ label parentsConfront:
     show dad at right
     show sylvie blue normal
     
-    dad "Sweetie, I've noticed that some of my pills have gone missing"
+    dad "Sweetie, I've noticed that some of my pills have gone missing."
     menu:
-        mom "Are you taking painkillers from your father"
+        mom "Are you taking painkillers from your father?"
         "I'm sorry. I have a problem.":
-            mom "It's good to admit you have a problem. We'll get you help. We still love you"
+            mom "It's good to admit you have a problem. We'll get you help. We still love you."
             jump getHelp
         "I'm not that type of girl, mom.":
             jump lockUpDrugs
@@ -111,7 +111,7 @@ label lockUpDrugs:
     scene bg house
     show sylvie blue normal
     "You sneak into your parents room to steal more painkillers."
-    "You find out that your parents have locked up the painkillers"
+    "You find out that your parents have locked up the painkillers."
     menu:
         "How will you get more drugs?"
         "Seek out a Drug Dealer":
@@ -200,38 +200,19 @@ label OD: # Ethan
     y "The love of my life has left me."
     y "..."
     y "......"
-    y "........."
 
-    menu:
-        "Should I ...?"
-        "Get help":
-            jump getHelp
-        "Just one to numb the pain":
-            jump ODhaha
-
-label ODhaha:
-    scene bg house
-
-    show sylvie blue normal
     y "Maybe another pill..."
     y "..."
-    y "..."
-    y "One more couldn't hurt"
-    y "Oops.."
+    y "One more couldn't hurt."
+    y "Oops..."
     hide sylvie blue normal
 
     show sylvie blue overdose
-    y "hehe."
-    y "hehehe."
-    hide sylvie blue overdose
-
-    scene bg all black
-    y "hehehehehe."
 
     scene bg all red
+    
     show sylvie blue overdose
-    y "HEHEHEHEHEHE"
-    hide sylvie blue overdose
+    
     "Here's what could have happened if you got help."
     jump getHelp
 
@@ -239,11 +220,11 @@ label getHelp:
 
     scene bg doctor
     show doctor
-    "Admitting that you have a problem is the first step to overcoming it."
-    "Drug abuse is a complex problem. It requires the support of friends and family to overcome."
-    "SAMHSA (Substance Abuse and Mental Health Services Administration) has a confidential, free, 24-hour-a-day, 365-day-a-year information service, for individuals and family members facing mental and/or substance use disorders."
+    doc "Admitting that you have a problem is the first step to overcoming it."
+    doc "Drug abuse is a complex problem. It requires the support of friends and family to overcome."
+    doc "SAMHSA (Substance Abuse and Mental Health Services Administration) has a confidential, free, 24-hour-a-day, 365-day-a-year information service, for individuals and family members facing mental and/or substance use disorders."
 
-    "Call 1-800-662-HELP"
+    doc "Call 1-800-662-HELP"
 
     hide doctor
     return
