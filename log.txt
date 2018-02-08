@@ -1,17 +1,29 @@
+<<<<<<< HEAD
 Wed Feb 07 16:26:31 2018
+=======
+Wed Feb 07 16:43:09 2018
+>>>>>>> 0aba2ca9ddb2bac36e1f2d99c423ff2f5db49640
 Windows-8-6.2.9200
 Ren'Py 6.99.14.1.3218
  
 
-Bootstrap to the start of init.init took 0.08s
+Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.02s
+<<<<<<< HEAD
 Loading script took 0.18s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.07s
+=======
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+>>>>>>> 0aba2ca9ddb2bac36e1f2d99c423ff2f5db49640
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -37,8 +49,13 @@ Interface start took 0.02s
 
 primary display bounds: (0, 0, 3000, 2000)
 swap interval: 1 frames
+<<<<<<< HEAD
 Windowed mode.
 Screen sizes: virtual=(1280, 720) physical=(2560, 1440) drawable=(2560, 1440)
+=======
+Fullscreen mode.
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+>>>>>>> 0aba2ca9ddb2bac36e1f2d99c423ff2f5db49640
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 520'
 Version: '4.5.0 - Build 22.20.16.4811'
@@ -275,6 +292,7 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
+<<<<<<< HEAD
 Total time until interface ready: 1.92499995232s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
@@ -296,3 +314,13 @@ Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+=======
+Total time until interface ready: 1.11100006104s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.018667 seconds.
+- Frame drawn at 0.020667 seconds.
+- Frame drawn at 0.029667 seconds.
+- Frame drawn at 0.041667 seconds.
+- 0.041667 seconds to render 5 frames.
+>>>>>>> 0aba2ca9ddb2bac36e1f2d99c423ff2f5db49640
