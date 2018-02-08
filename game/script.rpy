@@ -236,6 +236,16 @@ label ODhaha:
     jump getHelp
 
 label getHelp:
+
+    scene bg doctor
+    show doctor
+    "Admitting that you have a problem is the first step to overcoming it."
+    "Drug abuse is a complex problem. It requires the support of friends and family to overcome."
+    "SAMHSA (Substance Abuse and Mental Health Services Administration) has a confidential, free, 24-hour-a-day, 365-day-a-year information service, for individuals and family members facing mental and/or substance use disorders."
+
+    "Call 1-800-662-HELP"
+
+    hide doctor
     return
 
 
