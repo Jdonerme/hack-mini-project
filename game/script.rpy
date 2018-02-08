@@ -14,7 +14,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg uni
+    scene bg house
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -37,7 +37,7 @@ label start:
         "No... I'm good":
             jump cmon
 label cmon:
-    scene bg uni
+    scene bg house
     show lucy happy
     menu:
         f "C'mon, just take the drugs"
@@ -48,7 +48,7 @@ label cmon:
             jump cmon
 
 label high:
-    scene bg uni
+    scene bg house
     show sylvie blue normal
     y "I'm so high rn"
     "The End"
