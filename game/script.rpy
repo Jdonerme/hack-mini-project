@@ -136,7 +136,7 @@ label policeScene:
 
 label jail:
     scene bg jail
-    show sylvie blue normal
+    show sylvie blue surprised
     y "I can’t believe I got caught buying drugs. What are my parents going to think? How did I get like this?"
     jump courtScene
 
@@ -175,7 +175,7 @@ label SOLeaves:
     bae "I can't do this anymore. I've been so supportive of you, but if you don't want to get help then I'm leaving."
     hide bae
     
-    show sylvie blue normal
+    show sylvie blue surprised
     menu:
         "Oh no, he left me! I love him so much and can't stand to be without him."
         "Do drugs to numb the pain.":
