@@ -1,3 +1,5 @@
 game/cache
 game/saves
 *.rpyc
+errors.txt
+log.txt
